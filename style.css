@@ -15,6 +15,13 @@ body {
     z-index: -4
 }
 
+.supbage {
+    color:white; 
+    text-align: right; 
+    margin-right: calc(.5vw + .5vh); 
+    font-size: calc(1vw + 1vh);
+}
+
 #visit {
     text-align: center;
     width: 100vw;
@@ -29,8 +36,10 @@ body {
 #header {
     position: fixed;
     width: 100vw;
-    height: 10vh;
-    z-index: 2
+    height: calc(3vw + 3vh);
+    z-index: 2;
+    transition: color, background;
+    transition-duration: .5s;
 }
 
 #body {

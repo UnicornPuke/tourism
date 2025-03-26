@@ -3,15 +3,29 @@
 <head>
 
     <link rel="stylesheet" href="style.css">
-
+    <script>
+        window.onscroll = function() {
+            var nav = document.getElementById('header');
+            if ( window.pageYOffset > parseInt(window.innerHeight )-100) {
+                nav.style.background = 'white';
+                nav.style.color = '#2b1235';
+            } else {
+                nav.style.background = 'none';
+                nav.style.color = 'white';
+            }
+        }
+    </script>
 </head>
 <body>
     <div id="banner">
-        <div id="header">
-            <h2 style="color:white; text-align: right; margin-right: 1vw;">Flora & Fauna</h2>
+        <div id="header" style="color:white;">
+            <h2 style="text-align: right; margin-right: calc(1vw + 1vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh); float: right;">Subpage 1</h2>
+            <h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh);float: right;">Subpage 2</h2>
+            <h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh);float: right;">Subpage 3</h2>
+            <h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh);float: right;">Subpage 4</h2>
         </div>
         <div id = "visit">
-            <h1 style ="z-index: -4">crystallis</h1>
+            <h1 style ="z-index: -4;margin-top: 0;">crystallis</h1>
         </div>
     </div>
     <div id="body"></div>
