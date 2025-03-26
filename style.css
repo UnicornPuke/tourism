@@ -1,0 +1,11 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url("images/banner.jpg");
+    background-size: 100%;
+}
+
+html {
+    padding: 0;
+    margin: 0
+}
