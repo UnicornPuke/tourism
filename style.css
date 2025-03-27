@@ -36,11 +36,11 @@ body {
 #visit2 {
     text-align: center;
     width: 100vw;
-    height:67vh;
-    line-height: 67vh;
+    height: 100vh;
+    line-height: calc(100vh - 14vw);
     font-family: "Bodoni Moda", serif;
     color: #f4e7f8;
-    font-size: calc(4vw);
+    font-size: 4vw;
     position: fixed;
 }
 
