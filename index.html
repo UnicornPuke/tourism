@@ -6,12 +6,15 @@
     <script>
         window.onscroll = function() {
             var nav = document.getElementById('header');
-            if ( window.pageYOffset > parseInt(window.innerHeight )-100) {
+            var logo = document.getElementById('logo');
+            if ( window.pageYOffset > parseInt(window.innerHeight )*.9) {
                 nav.style.background = 'white';
                 nav.style.color = '#2b1235';
+                logo.src = "images/logoblack.png"
             } else {
                 nav.style.background = 'none';
                 nav.style.color = 'white';
+                logo.src = "images/logopink.png"
             }
         }
     </script>
@@ -19,13 +22,17 @@
 <body>
     <div id="banner">
         <div id="header" style="color:white;">
+            <img id = "logo" style="height:calc(3vw + 3vh); width:calc(3vw + 3vh);margin: calc(.2vw + .2vh)", src="images/logoblack.png">
             <h2 style="text-align: right; margin-right: calc(1vw + 1vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh); float: right;">Subpage 1</h2>
             <h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh);float: right;">Subpage 2</h2>
             <h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh);float: right;">Subpage 3</h2>
             <h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh);float: right;">Subpage 4</h2>
         </div>
-        <div id = "visit">
-            <h1 style ="z-index: -4;margin-top: 0;">crystallis</h1>
+        <div id="visit2">
+            <h1 style ="z-index: -4;margin-top: 0; opacity: .9">visit</h1>
+        </div>
+        <div id="visit">
+            <h1 style ="z-index: -4;margin-top: 0; opacity: .9">crystallis</h1>
         </div>
     </div>
     <div id="body"></div>

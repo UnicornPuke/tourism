@@ -33,6 +33,17 @@ body {
     position: fixed;
 }
 
+#visit2 {
+    text-align: center;
+    width: 100vw;
+    height:67vh;
+    line-height: 67vh;
+    font-family: "Bodoni Moda", serif;
+    color: #f4e7f8;
+    font-size: calc(4vw);
+    position: fixed;
+}
+
 #header {
     position: fixed;
     width: 100vw;
