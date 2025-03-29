@@ -62,14 +62,17 @@ body {
     height: calc(5vw + 5vh);
     line-height: calc(2.5vw + 2.5vh);
     background-color: #09030b;
+    font-size: calc(.65vw + .65vh);
 }
 
 #body {
     width: 100vw;
+    height:min-content;
     background-color: #2b1235;
     position: relative;
     padding-top: .01vh;
     padding-bottom: 5vh;
+    overflow-y: hidden;
 }
 
 html {
