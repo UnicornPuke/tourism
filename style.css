@@ -57,11 +57,19 @@ body {
     top: 0;
 }
 
+#footer {
+    width: 100vw;
+    height: calc(5vw + 5vh);
+    line-height: calc(2.5vw + 2.5vh);
+    background-color: #09030b;
+}
+
 #body {
     width: 100vw;
-    height: 100vh;
     background-color: #2b1235;
-    position: absolute;
+    position: relative;
+    padding-top: .01vh;
+    padding-bottom: 5vh;
 }
 
 html {
