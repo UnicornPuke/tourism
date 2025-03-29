@@ -71,7 +71,7 @@ body {
     background-color: #2b1235;
     position: relative;
     padding-top: .01vh;
-    padding-bottom: 5vh;
+    padding-bottom: calc(2vh + 2vw);
     overflow-y: hidden;
 }
 
