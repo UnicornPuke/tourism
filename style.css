@@ -57,6 +57,17 @@ body {
     top: 0;
 }
 
+#flora2 {
+    position: fixed;
+    width: 100vw;
+    margin-top: calc(3vw + 3vh);
+    height: calc(3vw + 3vh);
+    z-index: 2;
+    transition: color, background;
+    transition-duration: .5s;
+    top: 0;
+}
+
 #footer {
     width: 100vw;
     height: calc(5vw + 5vh);

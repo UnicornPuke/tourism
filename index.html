@@ -5,20 +5,28 @@
     <link rel="stylesheet" href="style.css">
     <title>Visit Crystallis | Home</title>
     <script>
+        function flora() {
+
+        }
         window.onscroll = function() {
             var nav = document.getElementById('header');
+            var flora = document.getElementById('flora2');
             var logo = document.getElementById('logo');
             var visit = document.getElementById('visit4');
             var visit2 = document.getElementById('visit3');
             if ( window.pageYOffset > parseInt(window.innerHeight )*.9) {
                 nav.style.background = 'white';
                 nav.style.color = '#2b1235';
+                flora.style.background = 'white';
+                flora.style.color = '#2b1235';
                 logo.src = "images/logoblack.png"
                 visit.style.opacity = '0'
                 visit2.style.opacity = '0'
             } else {
                 nav.style.background = 'none';
                 nav.style.color = 'white';
+                flora.style.background = 'none';
+                flora.style.color = 'white';
                 logo.src = "images/logopink.png"
                 visit.style.opacity = '1'
                 visit2.style.opacity = '1'
@@ -29,10 +37,18 @@
 <body>
     <div id="header" style="color:white;">
         <a href=""><img id = "logo" style="height:calc(3vw + 3vh); width:calc(3vw + 3vh);margin: calc(.2vw + .2vh)", src="images/logopink.png"></a>
-        <h2 style="text-align: right; margin-right: calc(1vw + 1vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh); float: right;">Subpage 1</h2>
-        <h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh);float: right;">Subpage 2</h2>
-        <h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh);float: right;">Subpage 3</h2>
-        <h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: alc(2vw + 2vh);float: right;">Subpage 4</h2>
+        <a style="color:inherit;" href="ourspecies"><h2 id='flora', style="text-align: right; margin-right: calc(1vw + 1vh); font-size: calc(1vw + 1vh); line-height: calc(2vw + 2vh);float: right;">Flora and Fauna</h2></a>
+        <a style="color: inherit;" href="info"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: calc(2vw + 2vh);float: right;">General Info</h2></a>
+        <a style="color: inherit;" href="seasons"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: calc(2vw + 2vh);float: right;">Seasons</h2></a>
+        <a style="color: inherit;" href="amenities"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: calc(2vw + 2vh);float: right;">Amenities</h2></a>
+    </div>
+    <div id="flora2" style="color:white;">
+        <a style="color:inherit;" href="ourspecies"><h2 id='flora3', style="text-align: right; margin-right: calc(1vw + 1vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Flora and Fauna</h2></a>
+        <a style="color: inherit;" href="info"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">General Info</h2></a>
+        <a style="color: inherit;" href="seasons"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Seasons</h2></a>
+        <a style="color: inherit;" href="amenities"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Amenities</h2></a>
+        <a style="color: inherit;" href="seasons"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Seasons</h2></a>
+        <a style="color: inherit;" href="amenities"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Amenities</h2></a>
     </div>
     <div id="visit2">
         <h1 id="visit3", style ="z-index: -4;margin-top: 0; opacity: .9">visit</h1>
