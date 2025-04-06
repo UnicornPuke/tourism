@@ -5,7 +5,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Visit Crystallis | Home</title>
     <script>
-        function flora() {
+        function floraon() {
+            let flora = true;
+            document.getElementById('flora2').style.opacity=1;
+            document.getElementById('flora2').style.visibility = 'visible'
+        }
+        function floraoff() {
+            let flora = false;
+            document.getElementById('flora2').style.opacity=0;
+            document.getElementById('flora2').style.visibility = 'hidden'
 
         }
         window.onscroll = function() {
@@ -25,7 +33,7 @@
             } else {
                 nav.style.background = 'none';
                 nav.style.color = 'white';
-                flora.style.background = 'none';
+                flora.style.background = 'rgba(255,255,255,0.01)';
                 flora.style.color = 'white';
                 logo.src = "images/logopink.png"
                 visit.style.opacity = '1'
@@ -37,12 +45,12 @@
 <body>
     <div id="header" style="color:white;">
         <a href=""><img id = "logo" style="height:calc(3vw + 3vh); width:calc(3vw + 3vh);margin: calc(.2vw + .2vh)", src="images/logopink.png"></a>
-        <a style="color:inherit;" href="ourspecies"><h2 id='flora', style="text-align: right; margin-right: calc(1vw + 1vh); font-size: calc(1vw + 1vh); line-height: calc(2vw + 2vh);float: right;">Flora and Fauna</h2></a>
-        <a style="color: inherit;" href="info"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: calc(2vw + 2vh);float: right;">General Info</h2></a>
-        <a style="color: inherit;" href="seasons"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: calc(2vw + 2vh);float: right;">Seasons</h2></a>
-        <a style="color: inherit;" href="amenities"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); line-height: calc(2vw + 2vh);float: right;">Amenities</h2></a>
+        <a style="color:inherit;" href="ourspecies"><h2 id='flora', onmouseenter="floraon()", onmouseleave="floraoff()", style="text-align: right; margin-right: calc(1vw + 1vh); font-size: calc(1vw + 1vh); float: right; margin-top: 0;">Flora and Fauna</h2></a>
+        <a style="color: inherit;" href="info"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh);float: right; margin-top: 0;">General Info</h2></a>
+        <a style="color: inherit;" href="seasons"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); float: right; margin-top: 0;">Seasons</h2></a>
+        <a style="color: inherit;" href="amenities"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); float: right; margin-top: 0;">Amenities</h2></a>
     </div>
-    <div id="flora2" style="color:white;">
+    <div id="flora2" style="color:white;", onmouseenter="floraon()", onmouseleave="floraoff()">
         <a style="color:inherit;" href="ourspecies"><h2 id='flora3', style="text-align: right; margin-right: calc(1vw + 1vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Flora and Fauna</h2></a>
         <a style="color: inherit;" href="info"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">General Info</h2></a>
         <a style="color: inherit;" href="seasons"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Seasons</h2></a>
