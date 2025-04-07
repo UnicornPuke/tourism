@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: "Quicksand", sans-serif;
     background-color: #2b1235;
+    color: #f4e7f8;
 }
 
 #banner {
@@ -31,7 +32,6 @@ body {
     height:100vh;
     line-height: 100vh;
     font-family: "Bodoni Moda", serif;
-    color: #f4e7f8;
     font-size: calc(7vw);
     position: fixed;
 }
@@ -42,7 +42,6 @@ body {
     height: 100vh;
     line-height: calc(100vh - 14vw);
     font-family: "Bodoni Moda", serif;
-    color: #f4e7f8;
     font-size: 4vw;
     position: fixed;
 }
@@ -72,6 +71,7 @@ body {
     top: 0;
     opacity: 0;
     visibility: hidden;
+    font-style: italic;
 }
 
 #footer {
