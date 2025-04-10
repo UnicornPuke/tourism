@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="../../images/logopink.png">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Visit Crystallis | Flora and Fauna</title>
+    <script>
+        function floraon() {
+            let flora = true;
+            document.getElementById('flora2').style.opacity=1;
+            document.getElementById('flora2').style.visibility = 'visible'
+        }
+        function floraoff() {
+            let flora = false;
+            document.getElementById('flora2').style.opacity=0;
+            document.getElementById('flora2').style.visibility = 'hidden'
+
+        }
+        window.onscroll = function() {
+            var nav = document.getElementById('header');
+            var flora = document.getElementById('flora2');
+            var logo = document.getElementById('logo');
+            var visit = document.getElementById('visit4');
+            var visit2 = document.getElementById('visit3');
+            if ( window.pageYOffset > parseInt(window.innerHeight )*.9) {
+                nav.style.background = 'white';
+                nav.style.color = '#030b04';
+                flora.style.background = 'white';
+                flora.style.color = '#030b04';
+                visit.style.opacity = '0'
+                visit2.style.opacity = '0'
+            } else {
+                nav.style.background = 'none';
+                nav.style.color = 'white';
+                flora.style.background = 'rgba(255,255,255,0.01)';
+                flora.style.color = 'white'
+                visit.style.opacity = '.9'
+                visit2.style.opacity = '.9'
+            }
+        }
+    </script>
+</head>
+<body style="color:#e7f8ec;">
+    <div id="header" style="color:white;">
+        <a href="../.."><img id = "logo" style="height:calc(3vw + 3vh); width:calc(3vw + 3vh);margin: calc(.2vw + .2vh)", src="../../images/logoblack.png"></a>
+        <a style="color:inherit;" href=".."><h2 id='flora', onmouseenter="floraon()", onmouseleave="floraoff()", style="text-align: right; margin-right: calc(1vw + 1vh); font-size: calc(1vw + 1vh); float: right; margin-top: 0;">Flora and Fauna</h2></a>
+        <a style="color: inherit;" href="../../info"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh);float: right; margin-top: 0;">General Info</h2></a>
+        <a style="color: inherit;" href="../../amenities"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(1vw + 1vh); float: right; margin-top: 0;">Amenities</h2></a>
+    </div>
+    <div id="flora2" style="color:white;", onmouseenter="floraon()", onmouseleave="floraoff()">
+        <a style="color: inherit;" href="../duotinctus"><h2 id='flora3', style="text-align: right; margin-right: calc(1vw + 1vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Duotinctus &euml;urandia</h2></a>
+        <a style="color: inherit;" href="../fertilis"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Fertilis quattor</h2></a>
+        <a style="color: inherit;" href="../impellera"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Impellera trifecta</h2></a>
+        <a style="color: inherit;" href="../impulsus"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Impulsus migrantis</h2></a>
+        <a style="color: inherit;" href="../minimus"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Minimus helencia</h2></a>
+        <a style="color: inherit;" href="../tentora"><h2 style="text-align: right; margin-right: calc(2vw + 2vh); font-size: calc(.75vw + .75vh); line-height: calc(2vw + 2vh);float: right;">Tentora iris</h2></a>
+    </div>
+    <div id="visit2" style="line-height: calc(100vh - 15vw)">
+        <h1 id="visit3", style ="color:#e7f8ec;z-index: -4;margin-top: 0; opacity: .9">impulsus</h1>
+    </div>
+    <div id="visit">
+        <h1 id="visit4", style ="color:#e7f8ec;z-index: -4;margin-top: .5vh; opacity: .9">migrantis</h1>
+    </div>
+    <div id="banner" style="background-image: url(../../images/science.jpg);"></div>
+    <div id="body" style="background-color: #133512;">
+        <h2 style="color: white; margin: calc(1.5vh + 1.5vw); font-size: calc(1.5vh + 1.5vw);text-align: center">Impulsus migrantis: "Sky-whale"</h2>
+        <h2 style="color: white; margin: calc(1.5vh + 1.5vw); font-size: calc(1vh + 1vw);text-align: center">(No images can legally be recorded on the surface of Crystallis for non-scientific purposes, so only sketches may be shown.)</h2>
+        <img src="../../images/impulsus.png", style="float: left;width:46vw; margin-left: 3vw; border-radius: calc(1vh + 1vw); border: solid rgb(2, 44, 5) calc(.1vh + .1vw);">
+        <div style="height:46vw; overflow: scroll; width: 45vw; background: inherit; float: left; margin-left: 3vw;">
+            <h2 style="color: white; margin-top: calc(1vh + 1vw); font-size: calc(1vh + 1vw); ">Impulsus migrantis, also known as the "Sky-whale," is a migrating airborne creature native to Batque in the winter, and Linar&eacute;t in the summer. The creature uses its food as fuel to fly around, ejecting hot air out of two funnels in the bottom and back, and dozens of smaller ones on the sides to steer. The animal eats minimus helencia with its large mouth, similar to how whales on earth eat thousands of krill. The animal also has a mirror on its head, that it uses to reflect light, due to the to the fact that it can still experience extreme heat during the migration process. It uses temperature to migrate, like most species. Very few species use day length as phenological markers, since day length can either be very extreme or very limited, with a lot of variety even by just a couple hundred miles north or south. Babies are simply dropped once born, and are expected to save themselves before they reach the ground, with parents often flying a little higher before childbirth to give the baby a better chance at living.</h2>
+        </div>
+    </div>
+    <div id="footer" style="color: white; text-align: center; background-color: #030b04;">
+        <h3 style=" margin-bottom: 2.5vw; text-align: center;  position: relative; z-index: 4; margin:0 0 0 0"><a href="../../aboutus", style = "color: white;">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/unicornpuke/tourism", style = "color: white;">Github Repo</a></h3>
+        <h3 style=" margin:0">&copy; 2168 Crystallis Holdings Administration. All rights reserved.</h3>
+    </div>
+</body>
+</html>
